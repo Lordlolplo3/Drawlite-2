@@ -64,12 +64,12 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #120e24;
+      background:rgb(22, 6, 37);
     }
 
     header {
-      background: #333;
-      color: white;
+      background: #32378e;
+      color: rgb(0, 0, 0);
       padding: 15px;
       text-align: center;
     }
@@ -82,10 +82,10 @@
     }
 
     .product, .cart {
-      background: white;
+      background: rgb(42, 9, 89);
       padding: 15px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(207, 95, 194, 0.1);
       text-align: center;
     }
 
@@ -95,7 +95,7 @@
     }
 
     .price {
-      color: green;
+      color: rgb(255, 255, 255);
       font-weight: bold;
       margin-bottom: 10px;
     }
@@ -107,8 +107,8 @@
     }
 
     button {
-      background: #28a745;
-      color: white;
+      background: #68d7d2;
+      color: rgb(0, 0, 0);
       border: none;
       padding: 10px;
       border-radius: 5px;
@@ -117,15 +117,15 @@
     }
 
     button:hover {
-      background: #218838;
+      background: #ffffff;
     }
 
     .checkout {
-      background: #007bff;
+      background: #ee6c6c;
     }
 
     .checkout:hover {
-      background: #0056b3;
+      background: #598ceb;
     }
   </style>
 </head>
@@ -139,8 +139,8 @@
 
   <!-- Products -->
   <div class="product">
-    <img src="https://via.placeholder.com/200">
-    <h3>Drawlite pad mini</h3>
+    <img src="images/light.jpeg">
+    <h3 class="white">Drawlite pad mini</h3>
     <p class="price">$100</p>
     <input type="number" min="1" value="1" id="qty1">
     <br>
@@ -148,8 +148,8 @@
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200">
-    <h3>Drawlite pad lite</h3>
+    <img src="images/med.jpeg">
+    <h3 class="white">Drawlite pad lite</h3>
     <p class="price">$250</p>
     <input type="number" min="1" value="1" id="qty2">
     <br>
@@ -157,8 +157,8 @@
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200">
-    <h3>Drawlite pad pro</h3>
+    <img src="images/large.jpeg">
+    <h3 class="white">Drawlite pad pro</h3>
     <p class="price">$500</p>
     <input type="number" min="1" value="1" id="qty3">
     <br>
@@ -167,9 +167,9 @@
 
   <!-- Cart Section -->
   <div class="cart">
-    <h2>🛒 Cart</h2>
+    <h2 class="white">🛒 Cart</h2>
     <ul id="cartItems"></ul>
-    <p><strong>Total: $<span id="total">0</span></strong></p>
+    <p class="white"><strong>Total: $<span id="total">0</span></strong></p>
     <button class="checkout" onclick="checkout()">Checkout</button>
   </div>
 
